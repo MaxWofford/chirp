@@ -7,7 +7,13 @@ var submitTweet = function() {
   // 2. Add the tweet to the list of tweets
   var newTweet = document.createElement('p');
   var tweets = document.getElementById('tweets');
-  newTweet.innerHTML = tweetInput.value;
+  var userImage = document.getElementById('user-icon');
+  if (userImage.value != '') {
+    var userIcon = document.createElement('img');
+    userIcon.src = userImage.value;
+    newTweet.appendChild(userIcon);
+  }
+  newTweet.innerHTML += tweetInput.value;
   tweets.appendChild(newTweet);
    
   // 3. Clear the tweet input and reset
