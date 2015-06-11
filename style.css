@@ -1,0 +1,26 @@
+html{
+  background: #4099FF;
+}
+
+.input-area {
+  background: rgba(255,255,255,0.2);
+  border-radius: 1em;
+  border: 1px rgba(255,255,255,0.3);
+  padding: 2em;
+}
+
+input {
+  border-radius: 7px;
+  padding: 3px;
+}
+
+.tweet-input {
+  max-width: 400px; 
+}
+
+p {
+  background: white;
+  padding: 3px;
+  border-radius: 7px;
+  width: inherit;
+}
